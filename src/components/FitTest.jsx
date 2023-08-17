@@ -14,8 +14,6 @@ import { useRef, useState } from 'react'
 
 import {factorialize} from '../utils/factorialize'
 
-import chiSquareTable from '../data/chiSquareTable'
-
 export const FitTest = () => {
   // input controlling states
   const [binsInput, setBinsInput] = useState("");
@@ -282,7 +280,6 @@ export const FitTest = () => {
                   backgroundColor: '#2E3C56',
                   color: '#EBEBEB',
                   width: '100%',
-                  height: '100%',
                   display: 'flex',
                   padding: '10px',
                   flexDirection: 'column',
