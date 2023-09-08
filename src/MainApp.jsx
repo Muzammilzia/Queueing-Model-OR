@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { InputLabel, MenuItem, FormControl, Box, Select } from '@mui/material'
 import { FitTest, GGC, MGC, MMC, Navbar } from './components'
+import { RandomNumbers } from './components/RandomNumbers'
+import { NormalRandomNumbers } from './components/NormalRandomNumbers'
 
 export const MainApp = () => {
   const [model, setModel] = useState('mmc')
@@ -28,6 +30,8 @@ export const MainApp = () => {
             <MenuItem value="mgc">M/G/C</MenuItem>
             <MenuItem value="ggc">G/G/C</MenuItem>
             <MenuItem value="fit test">Goodness of fit test</MenuItem>
+            <MenuItem value="uniform">Uniform random numbers</MenuItem>
+            <MenuItem value="normal">Normal random numbers</MenuItem>
           </Select>
         </FormControl>
       </Box>
@@ -42,6 +46,10 @@ export const MainApp = () => {
         <ChiSquareTest />
       ) : model === 'fit test' ? (
         <FitTest />
+      ) : model === 'uniform' ? (
+        <RandomNumbers/>
+      ) : model === 'normal' ? (
+        <NormalRandomNumbers />
       ) : null}
     </div>
   )

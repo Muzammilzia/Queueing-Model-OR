@@ -12,7 +12,7 @@ export const Home = ({setShowHome}) => {
             <h2 style={{textAlign: "center", width: "35%", margin: "10px 0"}}>Bilal Hussain Bangash</h2>
         </div>
         <h2 style={{margin: "16px 0"}}>Project Submitted to: Miss Shaista Raees</h2>
-        <h4 style={{margin: "16px 0"}}>This is project is queueing model, we have implemented multiple queueing models which include mmc, mgc, ggc and chisquare goodness of fit test</h4>
+        <h3 style={{margin: "16px 0"}}>This project is queueing model, we have implemented multiple queueing models which include mmc, mgc, ggc and chisquare goodness of fit test</h3>
         <Button
         variant="contained"
         size="large"
